@@ -21,7 +21,7 @@ Module DecisionStructures
         'display the result on the console
 
         If butterscotch > 6 Then
-            Console.WriteLine("Butterscotch Is Great! (butterscotch > 3).")
+            Console.WriteLine("Butterscotch Is Great! (butterscotch > 6).")
         End If
 
         If butterscotch > 3 Then
@@ -29,7 +29,7 @@ Module DecisionStructures
         End If
 
         If butterscotch > 4 Then
-            Console.WriteLine("Butterscotch Is Great! (butterscotch > 3).")
+            Console.WriteLine("Butterscotch Is Great! (butterscotch > 4).")
         End If
 
     End Sub
