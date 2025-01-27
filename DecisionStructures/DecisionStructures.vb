@@ -42,7 +42,7 @@ Module DecisionStructures
         End If
 
 
-        butterscotch += 3
+        butterscotch -= 3
 
         If butterscotch > 6 Then
             Console.WriteLine($"{butterscotch} is a big number!")
@@ -51,7 +51,7 @@ Module DecisionStructures
         ElseIf butterscotch > 4 Then
             Console.WriteLine("who gives a ... nevermind.")
         Else
-            Console.WriteLine($"Not sure what is going on")
+            Console.WriteLine($"Not sure what is going on...")
         End If
 
 
