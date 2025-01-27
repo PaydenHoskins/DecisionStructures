@@ -1,13 +1,13 @@
-﻿'Payden Hoskins
+﻿Option Explicit On
+Option Strict On
+'Payden Hoskins
 'RECT2265
 'Spring 2025
 'DecisionStructures
 
 
 
-Option Explicit On
-Option Strict On
-
+Imports System.ComponentModel
 
 Module DecisionStructures
 
@@ -60,9 +60,9 @@ Module DecisionStructures
         butterScotch = CInt(userInput)
         Select Case butterScotch
             Case 0 To 3
-
+                Console.WriteLine("too young.")
             Case 4 To 10
-
+                Console.WriteLine("Come back next year kid.")
             Case 11 To 64
 
             Case 65 To 99
