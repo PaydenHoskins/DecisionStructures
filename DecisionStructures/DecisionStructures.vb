@@ -19,10 +19,18 @@ Module DecisionStructures
 
         'test is butterscotch greater than 6
         'display the result on the console
+
+        If butterscotch > 6 Then
+            Console.WriteLine("Butterscotch Is Great! (butterscotch > 3).")
+        End If
+
         If butterscotch > 3 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 3).")
         End If
 
+        If butterscotch > 4 Then
+            Console.WriteLine("Butterscotch Is Great! (butterscotch > 3).")
+        End If
 
     End Sub
 
