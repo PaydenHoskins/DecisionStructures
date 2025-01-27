@@ -43,7 +43,7 @@ Module DecisionStructures
 
 
         butterscotch -= 3
-
+        'if none of the conditions are met display else
         If butterscotch > 6 Then
             Console.WriteLine($"{butterscotch} is a big number!")
         ElseIf butterscotch > 3 Then
