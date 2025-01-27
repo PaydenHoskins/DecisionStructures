@@ -16,11 +16,11 @@ Module DecisionStructures
 
         'assign 5 to butterscotch
         butterscotch = 5
+
         'test is butterscotch greater than 6
         'display the result on the console
-        If butterscotch > 6 Then
-            Console.WriteLine("Butterscotch Is Great! (butterscotch > 6).")
-
+        If butterscotch > 3 Then
+            Console.WriteLine("Butterscotch Is Great! (butterscotch > 3).")
         End If
 
 
