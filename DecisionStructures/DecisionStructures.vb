@@ -12,48 +12,66 @@ Option Strict On
 Module DecisionStructures
 
     Sub Main()
-        Dim butterscotch As Integer
+        Dim butterScotch As Integer
+        Dim userInput As String
 
         'assign 5 to butterscotch
-        butterscotch = 5
+        butterScotch = 5
 
         'test Is butterscotch greater than 6
         'display the result on the console
 
-        If butterscotch > 6 Then
+        If butterScotch > 6 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 6).")
         End If
 
-        If butterscotch > 3 Then
+        If butterScotch > 3 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 3).")
         End If
 
-        If butterscotch > 4 Then
+        If butterScotch > 4 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 4).")
         End If
 
         'If on of the evaluated statments are true it will display and everything else will be skipped
-        If butterscotch > 6 Then
+        If butterScotch > 6 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 6).")
-        ElseIf butterscotch > 3 Then
+        ElseIf butterScotch > 3 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 3).")
-        ElseIf butterscotch > 4 Then
+        ElseIf butterScotch > 4 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 4).")
         End If
 
 
-        butterscotch -= 3
+        butterScotch -= 3
         'if none of the conditions are met display else
-        If butterscotch > 6 Then
-            Console.WriteLine($"{butterscotch} is a big number!")
-        ElseIf butterscotch > 3 Then
+        If butterScotch > 6 Then
+            Console.WriteLine($"{butterScotch} is a big number!")
+        ElseIf butterScotch > 3 Then
             Console.WriteLine($"Sorry not tall enough..!")
-        ElseIf butterscotch > 4 Then
+        ElseIf butterScotch > 4 Then
             Console.WriteLine("who gives a ... nevermind.")
         Else
             Console.WriteLine($"Not sure what is going on...")
         End If
 
+        Console.WriteLine("Please enter age.")
+        userInput = Console.ReadLine()
+        butterScotch = CInt(userInput)
+        Select Case butterScotch
+            Case 0 To 3
+
+            Case 4 To 10
+
+            Case 11 To 64
+
+            Case 65 To 99
+
+            Case > 100
+
+            Case Else
+
+        End Select
 
     End Sub
 
