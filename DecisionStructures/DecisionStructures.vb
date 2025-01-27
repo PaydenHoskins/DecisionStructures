@@ -32,7 +32,7 @@ Module DecisionStructures
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 4).")
         End If
 
-
+        'If on of the evaluated statments are true it will display and everything else will be skipped
         If butterscotch > 6 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 6).")
         ElseIf butterscotch > 3 Then
