@@ -12,6 +12,9 @@ Option Strict On
 Module DecisionStructures
 
     Sub Main()
+        Dim butterscotch As Integer
+
+        'assign $ to butterscotch
 
     End Sub
 
