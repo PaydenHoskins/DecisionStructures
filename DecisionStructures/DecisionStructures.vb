@@ -40,6 +40,21 @@ Module DecisionStructures
         ElseIf butterscotch > 4 Then
             Console.WriteLine("Butterscotch Is Great! (butterscotch > 4).")
         End If
+
+
+        butterscotch += 3
+
+        If butterscotch > 6 Then
+            Console.WriteLine($"{butterscotch} is a big number!")
+        ElseIf butterscotch > 3 Then
+            Console.WriteLine($"Sorry not tall enough..!")
+        ElseIf butterscotch > 4 Then
+            Console.WriteLine("who gives a ... nevermind.")
+        Else
+            Console.WriteLine($"Not sure what is going on")
+        End If
+
+
     End Sub
 
 End Module
