@@ -58,22 +58,29 @@ Module DecisionStructures
 
         Console.WriteLine("Please enter age.")
         userInput = Console.ReadLine()
-        butterScotch = CInt(userInput)
-        Select Case butterScotch
-            Case 0 To 3
-                Console.WriteLine("Too young.")
-            Case 4 To 10
-                Console.WriteLine("Come back next year kid.")
-            Case 11 To 64
-                Console.WriteLine("Go right ahead sir!")
-            Case 65 To 99
-                Console.WriteLine("Are you sure your hips can handle this?")
-            Case > 100
-                Console.WriteLine("Oh no they escaped the old folks home again!")
-            Case Else
-                Console.WriteLine("Hey buddy quit messing with the" &
+
+        Try
+            butterScotch = CInt(userInput)
+            Select Case butterScotch
+                Case 0 To 3
+                    Console.WriteLine("Too young.")
+                Case 4 To 10
+                    Console.WriteLine("Come back next year kid.")
+                Case 11 To 64
+                    Console.WriteLine("Go right ahead sir!")
+                Case 65 To 99
+                    Console.WriteLine("Are you sure your hips can handle this?")
+                Case > 100
+                    Console.WriteLine("Oh no they escaped the old folks home again!")
+                Case Else
+                    Console.WriteLine("Hey buddy quit messing with the" &
                                   " machine and put your real age in.")
-        End Select
+            End Select
+
+        Catch ex As Exception
+            Console.WriteLine($"You entered {userInput} which is not" &
+                              " a numeric age so try again... BRO!")
+        End Try
 
     End Sub
 
