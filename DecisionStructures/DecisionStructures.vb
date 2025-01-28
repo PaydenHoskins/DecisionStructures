@@ -6,6 +6,7 @@
 
 Option Explicit On
 Option Strict On
+Option Compare Text
 
 Imports System.ComponentModel
 
@@ -60,17 +61,18 @@ Module DecisionStructures
         butterScotch = CInt(userInput)
         Select Case butterScotch
             Case 0 To 3
-                Console.WriteLine("too young.")
+                Console.WriteLine("Too young.")
             Case 4 To 10
                 Console.WriteLine("Come back next year kid.")
             Case 11 To 64
-
+                Console.WriteLine("Go right ahead sir!")
             Case 65 To 99
-
+                Console.WriteLine("Are you sure your hips can handle this?")
             Case > 100
-
+                Console.WriteLine("Oh no they escaped the old folks home again!")
             Case Else
-
+                Console.WriteLine("Hey buddy quit messing with the" &
+                                  " machine and put your real age in.")
         End Select
 
     End Sub
